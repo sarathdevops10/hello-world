@@ -1,2 +1,3 @@
 FROM tomcat:8.5
-COPY webapp.war /usr/local/tomcat/webapps/webapp.war
+buildContext: /home/ec2-user
+COPY /home/ec2-user/webapp.war /usr/local/tomcat/webapps/webapp.war
